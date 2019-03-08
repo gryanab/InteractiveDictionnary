@@ -1,6 +1,6 @@
 # InteractiveDictionnary
 
-This little project is based on pure plain Python. No library.
+This little project is based on pure plain Python.
  
 This interactive dictionary will simply returns definition of english words that exists in a JSON file attached to it.
 
