@@ -13,8 +13,12 @@ def definition(word: str):
 
     word_to_lower_case = word.lower()
     try:
-        if word_to_lower_case in dictionary:
+        if word in dictionary:
+            return dictionary[word]
+        elif word_to_lower_case in dictionary:
             return dictionary[word_to_lower_case]
+        elif word.title() in dictionary:  # if user entered "texas" this will check for "Texas" as well.
+            return dictionary[word.title()]
         # returning several items in list
         elif len(get_close_matches(word_to_lower_case, dictionary.keys(), cutoff=0.8)) > 0:
             # proposing item with the greatest probability to match query. Hence, the first one on the list.
