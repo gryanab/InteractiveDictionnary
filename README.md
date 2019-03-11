@@ -2,7 +2,7 @@
 
 This little project is based on pure plain Python.
  
-This interactive dictionary will simply returns definition of english words that exists in a JSON file attached to it.
+This interactive dictionary will simply returns definition of english words that exists in a JSON file attached to it. It is using tha command line as an interface.
 
 
 ## Note
